@@ -1,10 +1,12 @@
 package com.anweather.android.db;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * Created by An on 2017/7/31.
  */
 
-public class Province extends DataSupport {
+public class Province extends DataSupport{
     private int id;
     private String provinceName;
     private int provinceCode;
