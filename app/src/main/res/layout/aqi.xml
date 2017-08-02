@@ -7,11 +7,11 @@
     android:background="#8000">
 
     <TextView
+        android:id="@+id/qlty_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
-        android:text="空气质量"
         android:textColor="#fff"
         android:textSize="20sp"/>
 
@@ -28,15 +28,22 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
 
                 <TextView
                     android:id="@+id/aqi_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:textColor="#fff"
                     android:textSize="40sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:text="AQI指数"/>
             </LinearLayout>
 
         </RelativeLayout>
@@ -55,15 +62,18 @@
                     android:id="@+id/pm25_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:textColor="#fff"
                     android:textSize="40sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:textColor="#fff"
-                    android:text="PM2.5 指数"/>
+                    android:text="PM2.5 指数" />
+
+
+
 
             </LinearLayout>
 

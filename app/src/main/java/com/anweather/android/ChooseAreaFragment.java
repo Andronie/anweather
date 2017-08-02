@@ -3,10 +3,12 @@ package com.anweather.android;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -69,6 +71,7 @@ public class ChooseAreaFragment extends Fragment {
      */
     private int currentLevel;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view=inflater.inflate(R.layout.choose_area,container,false);
@@ -124,7 +127,7 @@ public class ChooseAreaFragment extends Fragment {
      * 查询全国所有的省，优先从数据库查询，如果没有查询到再去服务器上查询
      */
     private void queryProvinces(){
-        titleText.setText("中国");
+        titleText.setText("请选择地区");
         backButton.setVisibility(View.GONE);
         provinceList= DataSupport.findAll(Province.class);
         if (provinceList.size()>0){

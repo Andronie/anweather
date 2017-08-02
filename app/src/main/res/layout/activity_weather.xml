@@ -40,6 +40,8 @@
 
             <include layout="@layout/aqi"/>
 
+            <include layout="@layout/data"/>
+
             <include layout="@layout/suggestion"/>
 
         </LinearLayout>
@@ -52,7 +54,7 @@
             android:name="com.anweather.android.ChooseAreaFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="start"/>
+            android:layout_gravity="start" />
 
     </android.support.v4.widget.DrawerLayout>
 </FrameLayout>

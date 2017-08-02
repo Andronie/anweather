@@ -13,6 +13,9 @@ public class Suggestion {
     @SerializedName("cw")
     public CarWash caeWash;
 
+    @SerializedName("uv")
+    public Uv uv;
+
     public Sport sport;
 
     public class Comfort{
@@ -26,6 +29,14 @@ public class Suggestion {
     public class Sport{
         @SerializedName("txt")
         public String info;
+    }
+
+    public class Uv{
+        @SerializedName("txt")
+        public String uv;
+
+        @SerializedName("brf")
+        public String brf;
     }
 
 }
